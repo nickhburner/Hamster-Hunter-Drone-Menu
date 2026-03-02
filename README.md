@@ -7,6 +7,7 @@ A mod menu for [Hamster Hunter](https://store.steampowered.com/app/2726490/Hamst
 **drone-menu.exe** - Full menu with everything:
 - Adjust drone thrust, strafe, vertical speed, acceleration, and deceleration
 - Bind keys or mouse side buttons to instantly set the drone's pitch and yaw
+- Added autoclicker functionality w/ hotkey and multiple entries
 
 ---
 
@@ -57,3 +58,4 @@ python drone-menu.py
 ```
 
 Same as the exe, the game must be running first and the script should be run as Administrator.
+
