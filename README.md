@@ -59,3 +59,4 @@ python drone-menu.py
 
 Same as the exe, the game must be running first and the script should be run as Administrator.
 
+
