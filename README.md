@@ -1,4 +1,4 @@
-# Hamster Hunter Mod Menu
+# Hamster Hunter FPV Drone Mod Menu
 
 A mod menu for [Hamster Hunter](https://store.steampowered.com/app/2726490/Hamster_Hunter/) on Steam. Lets you tweak drone (FPV) settings like speed and pitch/yaw hotkeys while you play.
 
@@ -58,5 +58,6 @@ python drone-menu.py
 ```
 
 Same as the exe, the game must be running first and the script should be run as Administrator.
+
 
 
