@@ -1,27 +1,34 @@
-# Hamster Hunter FPV Drone Mod Menu
+# Hamster Hunter Drone Menu
 
-A mod menu for [Hamster Hunter](https://store.steampowered.com/app/2726490/Hamster_Hunter/) on Steam. Lets you tweak drone (FPV) settings like speed and pitch/yaw hotkeys while you play.
+A drone-only mod menu for [Hamster Hunter](https://store.steampowered.com/app/2726490/Hamster_Hunter/) on Steam. Focused entirely on FPV drone controls, good for building and precision flying.
 
 ---
 
-**drone-menu.exe** - Full menu with everything:
+**drone-menu.exe** - Drone-focused menu:
 - Adjust drone thrust, strafe, vertical speed, acceleration, and deceleration
 - Bind keys or mouse side buttons to instantly set the drone's pitch and yaw
-- Added autoclicker functionality w/ hotkey and multiple entries
+- Auto-clicker with hotkey toggle and configurable click delay
+
+**Quality of life:**
+- Waits for the game to launch on its own — no need to open in a specific order
+- Automatically reconnects if the game is closed and reopened without restarting the menu
+- Hover over any `?` icon for a description of what that value does
+- Opacity slider to keep the menu visible without blocking your screen
 
 ---
 
 ## How to use
 
-1. Launch **Hamster Hunter** first
-2. Open the menu exe (run as Administrator - might be required for memory access)
-3. The menu will attach to the game automatically
+1. Open **drone-menu.exe** (run as Administrator — might be required for memory access)
+2. Launch **Hamster Hunter** — the menu will attach automatically
+3. The menu will show your current drone values once a drone is active
 
 **Tips:**
 - Press the tilde key (`~`) to toggle whether the menu stays on top of other windows
 - For pitch/yaw hotkeys, click **Record**, press the key or mouse side button you want, enter the value, then click **Add**
 - You can add multiple bindings per section and remove them individually
-- The drone speed fields show the current in-game value when the drone is active
+- The speed fields show the live in-game value when the drone is active
+- If the game closes, the menu waits and reconnects when you relaunch — your bindings are preserved
 
 ---
 
@@ -44,7 +51,7 @@ The full source code is included in this repository (`drone-menu.py`) so you can
 
 To run from source you will need:
 
-1. [Python 3.10 or newer](https://www.python.org/downloads/) - check "Add Python to PATH" during install
+1. [Python 3.10 or newer](https://www.python.org/downloads/) — check "Add Python to PATH" during install
 2. Open a terminal in the folder and run:
 
 ```
@@ -57,7 +64,4 @@ pip install customtkinter pymem pynput
 python drone-menu.py
 ```
 
-Same as the exe, the game must be running first and the script should be run as Administrator.
-
-
-
+Same as the exe, run as Administrator if memory access is denied.
